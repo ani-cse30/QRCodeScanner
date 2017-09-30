@@ -23,9 +23,20 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZm-yR-7EJ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScanLogo" translatesAutoresizingMaskIntoConstraints="NO" id="cZz-sT-Gd8">
+                                        <rect key="frame" x="162.5" y="20" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="SVc-L3-YPj"/>
+                                            <constraint firstAttribute="width" constant="50" id="TSZ-zi-cIG"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="2yU-u2-zZP"/>
+                                    <constraint firstItem="cZz-sT-Gd8" firstAttribute="centerX" secondItem="dZm-yR-7EJ" secondAttribute="centerX" id="Kd7-7C-ppD"/>
+                                    <constraint firstItem="cZz-sT-Gd8" firstAttribute="centerY" secondItem="dZm-yR-7EJ" secondAttribute="centerY" id="eLn-Ac-xdt"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FxE-uL-3wv">
@@ -160,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I9B-J2-Xy1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5523.75" y="842.95774647887322"/>
+            <point key="canvasLocation" x="5576.8000000000002" y="877.51124437781118"/>
         </scene>
     </scenes>
     <resources>
@@ -168,5 +179,6 @@
         <image name="FlashIcon" width="305" height="306"/>
         <image name="PreviewIcon" width="1024" height="1024"/>
         <image name="ScanIcon" width="166" height="163"/>
+        <image name="ScanLogo" width="165" height="164"/>
     </resources>
 </document>
