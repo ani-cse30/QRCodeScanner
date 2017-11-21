@@ -171,6 +171,10 @@
         [_captureSession commitConfiguration];
     }
 }
+
+/**
+ @Author Anindya
+ */
 - (AVCaptureDevice *) cameraWithPosition:(AVCaptureDevicePosition) position
 {
     NSArray *devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
