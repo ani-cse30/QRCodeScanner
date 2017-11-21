@@ -110,6 +110,7 @@
 				TargetAttributes = {
 					0700F5A61F802849000C5F24 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 7VT6555VUS;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -272,9 +273,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7VT6555VUS;
 				INFOPLIST_FILE = QRCodeScanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appsInception.QRCodeScanner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsInception.QRCodeScanner2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -283,9 +285,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7VT6555VUS;
 				INFOPLIST_FILE = QRCodeScanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appsInception.QRCodeScanner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsInception.QRCodeScanner2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -309,6 +312,7 @@
 				0700F5C01F802849000C5F24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

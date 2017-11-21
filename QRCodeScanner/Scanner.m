@@ -95,7 +95,8 @@
                                  actionWithTitle:@"OK"
                                  style:UIAlertActionStyleDefault
                                  handler:^(UIAlertAction * action) {
-                                    
+                                     [self startReading];
+                                     [_viewPreview bringSubviewToFront:_previewFrame];
                                      
                                  }];
             [alert addAction:ok];
@@ -114,15 +115,19 @@
             [device lockForConfiguration:nil];
             if (device.torchMode == AVCaptureTorchModeOff)
             {
-                [device setTorchMode:AVCaptureTorchModeOn];
-                [device setFlashMode:AVCaptureFlashModeOn];
-                //torchIsOn = YES;
+                AVCaptureInput* currentCameraInput = [_captureSession.inputs objectAtIndex:0];
+                if (((AVCaptureDeviceInput*)currentCameraInput).device.position == AVCaptureDevicePositionBack) {
+                    [device setTorchMode:AVCaptureTorchModeOn];
+                    [device setFlashMode:AVCaptureFlashModeOn];
+                }
+                
+               // torchIsOn = YES;
             }
             else
             {
                 [device setTorchMode:AVCaptureTorchModeOff];
                 [device setFlashMode:AVCaptureFlashModeOff];
-                // torchIsOn = NO;
+               // torchIsOn = NO;
             }
             [device unlockForConfiguration];
         }
